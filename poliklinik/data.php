@@ -27,7 +27,7 @@
                 <tbody>
                 <?php
                 $no = 1;
-                $sql_poli = mysqli_query($con, "SELECT * FROM tb_poli ORDER BY nama_poli ASC") or die (mysqli_error($con));
+                $sql_poli = mysqli_query($con, "SELECT * FROM tb_poli ORDER BY nama_poli DESC") or die (mysqli_error($con));
                 if(mysqli_num_rows($sql_poli) > 0) { 
                     while($data = mysqli_fetch_array($sql_poli)) { ?>
                         <tr>
