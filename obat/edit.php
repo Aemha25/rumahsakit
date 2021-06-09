@@ -10,11 +10,11 @@
         </h4>
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
-            <?php
-            $id = @$_GET['id'];
-            $sql_obat = mysqli_query($con, "SELECT * FROM tb_obat WHERE id_obat = '$id'") or die (mysqli_error($con));
-            $data =mysqli_fetch_array($sql_obat);
-            ?>
+                <?php
+                $id = @$_GET['id'];
+                $sql_obat = mysqli_query($con, "SELECT * FROM tb_obat WHERE id_obat = '$id'") or die (mysqli_error($con));
+                $data = mysqli_fetch_array($sql_obat);
+                ?>
                 <form action="proses.php" method="post">
                     <div class="form-group">
                         <label for="nama">Nama Obat</label>
